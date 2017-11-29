@@ -1,0 +1,7 @@
+<% if session[:username] != nil || "" %>
+  <h1> Hi, <%= session[:username] %> </h1><br>
+  <a href="/logout" method="POST">Logout.</a>
+<% else %>
+  <a href="/login" method="GET">Login.</a>
+<% end %>
+<% end %>
